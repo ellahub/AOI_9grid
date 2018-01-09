@@ -10,11 +10,11 @@ author: atao 1628025718@qq.com
 using namespace TT;
 int main()
 {
-	//100x100µÄ³¡¾°£¬Ò²¾ÍÊÇ10000¸öĞ¡¸ñ×Ó
-	//×ª»»³É9¹¬¸ñºó£¬±ä³É200¶à¸ö´ó¸ñ×Ó
+	//100x100çš„åœºæ™¯ï¼Œä¹Ÿå°±æ˜¯10000ä¸ªå°æ ¼å­
+	//è½¬æ¢æˆ9å®«æ ¼åï¼Œå˜æˆ200å¤šä¸ªå¤§æ ¼å­
 	TT::Scene scene(100, 100);
 
-	//×¼±¸10000¸öÊµÌå,×ø±ê·Ö±ğÊÇ(0,0),(0,1),...(99,99)
+	//å‡†å¤‡10000ä¸ªå®ä½“,åæ ‡åˆ†åˆ«æ˜¯(0,0),(0,1),...(99,99)
 	std::vector<Entity> e_vec;
 	e_vec.reserve(10000);
 	for (int x = 0; x < 100; ++x)
@@ -25,7 +25,7 @@ int main()
 			e_vec.push_back(e);
 		}
 	}
-	//È«²¿½øÈë³¡¾°
+	//å…¨éƒ¨è¿›å…¥åœºæ™¯
 	for (auto it : e_vec)
 	{
 		scene.Enter(it);
@@ -34,8 +34,8 @@ int main()
 	//printf("66th id %I64u x %d y %d\n", e_vec[66].id(), e_vec[66].x(), e_vec[66].y());
 	getchar();
 	//scene.Leave(e2);
-	//²âÊÔÒÆ¶¯
-	for (int i = 1; i < 1000; ++i)
+	//æµ‹è¯•ç§»åŠ¨
+	for (int i = 1; i < 100; ++i)
 	{
 		scene.Move(e_vec[0], i, i);
 		getchar();
