@@ -5,7 +5,8 @@ author: atao 1628025718@qq.com
 #include <cstdint>
 namespace TT
 {
-	//³¡¾°ÊµÌå
+	//ç®€å•åœºæ™¯å®ä½“
+	//simple scene obj
 	class Entity
 	{
 	public:
@@ -25,7 +26,7 @@ namespace TT
 
 	private:
 		uint64_t id_; //ID
-		uint16_t x_;  //×ø±ê
+		uint16_t x_;  
 		uint16_t y_;
 	};
 }//namespace TT
